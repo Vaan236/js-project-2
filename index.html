@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechGear Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">TechGear Haven</div>
+            <button class="menu-toggle" onclick="toggleDropdownMenu()">Menu</button>
+            <div id="dropdown-menu">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+            </div>
+        </header>
+        <div class="interaction-section">
+            <div class="product-selector">
+                <div class="product-details">
+                    <h3>WH-1000XM5 Wireless Noise-Canceling Headphones</h3>
+                    <span class="product-price">$363.93</span>
+                    <img src="img/headphones.jpg" alt="Product Image">
+                    <iframe width="240 " height="240" src="https://www.youtube.com/embed/v6EjmbMgv80?si=-wIJkW2iAP5uP840" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="quantity-control">
+                    <button onclick="changeCount(-1)">-</button>
+                    <span id="count">0</span>
+                    <button onclick="changeCount(1)">+</button>
+                </div>
+                <div class="total-price" id="total-price">Total: $0.00</div>
+            </div>
+            <button id="addParagraphButton">Add Product Description</button>
+            <div id="paragraphContainer"></div>
+           
+            <div class="name-input-section">
+                <div class="name-input-container">
+                    <div class="input-group">
+                        <label for="username">Name: </label>
+                        <input type="text" id="username" placeholder="Enter your name" required>
+                        <button id="greetButton">Greet Me</button>
+                    </div>
+                    <button id="resetButton">Reset</button>
+                </div>
+                <div id="greetingMessage" class="greeting"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
